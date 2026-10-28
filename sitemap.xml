@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR_DEPLOYED_DOMAIN/index.html</loc></url>
-  <url><loc>https://YOUR_DEPLOYED_DOMAIN/features.html</loc></url>
-  <url><loc>https://YOUR_DEPLOYED_DOMAIN/about.html</loc></url>
-  <url><loc>https://YOUR_DEPLOYED_DOMAIN/contact.html</loc></url>
+  <url><loc>https://nexora-website-ashy-gamma.vercel.app/index.html</loc></url>
+  <url><loc>https://nexora-website-ashy-gamma.vercel.app/features.html</loc></url>
+  <url><loc>https://nexora-website-ashy-gamma.vercel.app/about.html</loc></url>
+  <url><loc>https://nexora-website-ashy-gamma.vercel.app/contact.html</loc></url>
 </urlset>
