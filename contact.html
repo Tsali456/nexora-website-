@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Nexora — Send a message</title>
+<meta name="description" content="Contact Nexora to ask about early access, features or pricing. Use the form to send your name, email, subject and message.">
+<link rel="canonical" href="https://YOUR_DEPLOYED_DOMAIN/contact.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d1b3a'/%3E%3Cpath d='M9 23V9l14 14V9' fill='none' stroke='%232dd4bf' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Contact Nexora">
+<meta property="og:description" content="Ask about early access, features or pricing.">
+<meta property="og:url" content="https://YOUR_DEPLOYED_DOMAIN/contact.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact Nexora">
+<meta name="twitter:description" content="Ask about early access, features or pricing.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html" aria-label="Nexora home"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0d1b3a"/><path d="M9 23V9l14 14V9" fill="none" stroke="#2dd4bf" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Nexora</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <div class="menu" id="menu">
+      <nav aria-label="Main"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul></nav>
+      <a class="btn btn-primary" href="#contact-form">Send a message</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Contact us</h1>
+      <p class="lead">Ask about early access, features or illustrative pricing. Fill in the form and we will reply to the email you provide.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap split" style="align-items:start">
+      <!-- Set data-endpoint to your form service URL (see SEO-AUDIT-REPORT.md). It is public by design; never put secret keys here. -->
+      <form id="contact-form" class="form card" method="post" novalidate data-endpoint="https://formspree.io/f/YOUR_FORM_ID">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required><span class="err" role="alert"></span></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required><span class="err" role="alert"></span></div>
+        <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required><span class="err" role="alert"></span></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea><span class="err" role="alert"></span></div>
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <div id="form-status" class="status" role="status" tabindex="-1"></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+      <div>
+        <h2>Before you write</h2>
+        <p>Nexora is a fictional product, so there is no real support team behind this demonstration. The form works only after a form service is connected, as explained in the project documentation.</p>
+        <ul class="ticks"><li>Browse <a href="features.html">features</a></li><li>Read the <a href="index.html#faq">FAQ</a></li><li>Learn <a href="about.html">about Nexora</a></li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div><a class="logo" href="index.html">Nexora</a><p style="margin-top:.8rem;max-width:36ch">Workflow and task management software for individuals, startups and teams. A fictional product for demonstration.</p></div>
+      <div><h2>Explore</h2><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div><h2>Contact</h2><ul><li><a href="contact.html">Send a message</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
+    </div>
+    <p class="legal">&copy; <span id="year">2026</span> Nexora. Fictional brand for demonstration purposes.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
